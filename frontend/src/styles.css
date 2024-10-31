@@ -1,0 +1,54 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+h2 {
+  font-size: 2.5rem; /* 🔠 Large font size for emphasis */
+  font-weight: bold; /* 💪 Bold text for readability */
+  color: #ff8c00; /* 🎨 Eye-catching color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* ✨ Subtle text shadow */
+}
+
+.card {
+  border-radius: 15px; /* 🔘 Rounded corners for a modern look */
+  overflow: hidden; /* 🌀 Prevent content overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 🌟 Soft shadow for depth */
+  transition: transform 0.2s; /* ⏳ Smooth transition effect */
+}
+
+.card:hover {
+  transform: scale(1.05); /* 🔍 Slightly enlarge on hover */
+}
+
+.container {
+  max-width: 1000px; /* 📏 Maximum width for container */
+  padding: 20px; /* 🧸 Padding for inner spacing */
+  background-color: #d3d3d3; /* 🎨 Light background color */
+  border-radius: 10px; /* 🔘 Rounded corners */
+}
+
+.btn {
+  min-width: 150px; /* 📏 Minimum width for buttons */
+  background-color: #28a745; /* 🌿 Green background color */
+  color: white; /* ⚪ White text color */
+  border: none; /* 🚫 No border */
+  border-radius: 5px; /* 🔘 Rounded corners */
+  padding: 10px 20px; /* 🧸 Padding for button */
+  transition: background-color 0.3s, transform 0.3s; /* ⏳ Smooth transition for hover */
+}
+
+.btn:hover {
+  background-color: #218838; /* 🌿 Darker green on hover */
+  transform: translateY(-3px); /* ⏫ Lift the button slightly */
+}
+
+textarea {
+  resize: none; /* 🚫 Prevent resizing */
+  border: 2px solid #ced4da; /* 🛡️ Border color */
+  border-radius: 5px; /* 🔘 Rounded corners */
+  padding: 10px; /* 🧸 Padding for inner spacing */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif; /* ✏️ Font for readability */
+}
+
+textarea:focus {
+  border-color: #80bdff; /* 🌊 Blue border on focus */
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5); /* ✨ Subtle shadow on focus */
+}

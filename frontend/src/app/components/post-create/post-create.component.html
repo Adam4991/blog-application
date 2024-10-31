@@ -1,0 +1,35 @@
+<div class="container my-5">
+  <div class="card shadow-lg">
+    <div class="card-body">
+      <h2 class="text-center mb-4">Create New Post</h2>
+      <form [formGroup]="postForm" (ngSubmit)="createPost()">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input id="title" formControlName="title" class="form-control" placeholder="Enter post title">
+          <div *ngIf="titleControl.invalid && (titleControl.dirty || titleControl.touched)">
+            Title is required
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="content" class="form-label">Content</label>
+          <textarea id="content" formControlName="content" class="form-control" rows="4" placeholder="Write your content here..."></textarea>
+          <div *ngIf="contentControl.invalid && (contentControl.dirty || contentControl.touched)">
+            Content is required
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="author" class="form-label">Author</label>
+          <input id="author" formControlName="author" class="form-control" placeholder="Author name">
+          <div *ngIf="authorControl.invalid && (authorControl.dirty || authorControl.touched)">
+            Author is required
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success" [disabled]="!postForm.valid">Create Post</button>
+        <a routerLink="/posts" class="btn btn-secondary ms-3">Back to Posts</a>
+      </form>
+    </div>
+  </div>
+</div>
